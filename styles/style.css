@@ -29,9 +29,7 @@ padding: 0px;
 }
 .menu-bar >ul{
     display: flex;
-    
-    
-    
+      
 }
 .icon{
     display: flex;
@@ -148,10 +146,23 @@ margin-left: 20px;
                 align-items: center;
                 background-color:  rgb(252, 244, 246) ;
              }
-             .weAre{
-                justify-content: flex-end;
+             .weAre-title{
+                color:   #8758F1 ;
              }
-
+             .weAre{
+                text-align: end;
+                 margin-right: 150px
+               
+             }
+             .ellipsis{
+                width: 110px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin-left: 600px; 
+              
+             }
+            
 
 
 
@@ -159,6 +170,9 @@ margin-left: 20px;
 
 /* 
 ...............media query........................ */
+
+ 
+   
 @media screen and (max-width:676px) {
     .nav-wrapper{
         flex-direction: column;
@@ -170,10 +184,51 @@ margin-left: 20px;
     .menu-bar li{
         margin-top: 20px;
     }
+   
     .icon{
         margin-top: 50px;
     }
     .icon >li{
        margin-top: 0px;
     }
+    /* section--1 */
+    .goat-wrapper{
+        flex-direction: column-reverse;
+    }
+    .goat-container{
+        width: 100%;
+        
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+    .goat-images>img{
+        width: 100%;
+    }
+    .goat-box{
+        margin-top: 0px;
+        margin-left: 0px;
+        padding: 20px;
+      
+       }
+       .goat-images{
+        width: 400px;
+       }
+       .weAre-Wrapper{
+        flex-direction: column;
+       
+       }
+       .weAre-container>img{
+        width: 100%;
+       }
+       .weAre{
+        text-align:  center;
+        width: 100%;
+        margin-left: 100px;
+        padding-left: 50px;
+       }
+       .ellipsis{
+        margin-left: 150px;
+       }
+
 }
